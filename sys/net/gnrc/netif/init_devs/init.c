@@ -182,4 +182,9 @@ void gnrc_netif_init_devs(void)
         auto_init_ncn5120();
     }
 
+    if (IS_USED(MODULE_TPUART)) {
+        extern void auto_init_tpuart(void);
+        auto_init_tpuart();
+    }
+
 }

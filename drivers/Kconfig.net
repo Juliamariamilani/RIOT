@@ -40,5 +40,6 @@ rsource "sx127x/Kconfig"
 rsource "sx1280/Kconfig"
 rsource "$(RIOTPKG)/tinyusb/netdev/Kconfig"
 rsource "tja1042/Kconfig"
+rsource "tpuart/Kconfig"
 rsource "w5100/Kconfig"
 endmenu # Network Device Drivers
