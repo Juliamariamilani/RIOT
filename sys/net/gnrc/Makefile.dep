@@ -33,6 +33,10 @@ ifneq (,$(filter gnrc_gomach,$(USEMODULE)))
   FEATURES_REQUIRED += periph_rtt
 endif
 
+ifneq (,$(filter gnrc_knx_l3,$(USEMODULE)))
+  DEFAULT_MODULE += auto_init_gnrc_knx_l3
+endif
+
 ifneq (,$(filter gnrc_lorawan,$(USEMODULE)))
   USEMODULE += ztimer_msec
   USEMODULE += random

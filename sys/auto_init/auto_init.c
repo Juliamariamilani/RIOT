@@ -125,6 +125,11 @@ extern int gnrc_tcp_init(void);
 AUTO_INIT(gnrc_tcp_init,
           AUTO_INIT_PRIO_MOD_GNRC_TCP);
 #endif
+#if IS_USED(MODULE_AUTO_INIT_GNRC_KNX_L3)
+extern void gnrc_knx_l3_init(void);
+AUTO_INIT(gnrc_knx_l3_init,
+          AUTO_INIT_PRIO_MOD_GNRC_KNX_L3);
+#endif
 #if IS_USED(MODULE_AUTO_INIT_LWIP)
 extern void lwip_bootstrap(void);
 AUTO_INIT(lwip_bootstrap,
