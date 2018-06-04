@@ -130,6 +130,11 @@ extern void gnrc_knx_l3_init(void);
 AUTO_INIT(gnrc_knx_l3_init,
           AUTO_INIT_PRIO_MOD_GNRC_KNX_L3);
 #endif
+#if IS_USED(MODULE_AUTO_INIT_GNRC_KNX_L4)
+extern void gnrc_knx_l4_init(void);
+AUTO_INIT(gnrc_knx_l4_init,
+          AUTO_INIT_PRIO_MOD_GNRC_KNX_L4);
+#endif
 #if IS_USED(MODULE_AUTO_INIT_LWIP)
 extern void lwip_bootstrap(void);
 AUTO_INIT(lwip_bootstrap,
