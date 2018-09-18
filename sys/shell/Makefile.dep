@@ -129,6 +129,9 @@ ifneq (,$(filter shell_cmds_default,$(USEMODULE)))
   ifneq (,$(filter vfs,$(USEMODULE)))
     USEMODULE += shell_cmd_vfs
   endif
+  ifneq (,$(filter knx_device,$(USEMODULE)))
+    USEMODULE += shell_cmd_knx_device
+  endif
 endif
 
 ifneq (,$(filter shell_cmd_app_metadata,$(USEMODULE)))

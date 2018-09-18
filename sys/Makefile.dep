@@ -125,6 +125,10 @@ ifneq (,$(filter ieee802154_security,$(USEMODULE)))
   USEMODULE += cipher_modes
 endif
 
+ifneq (,$(filter knx,$(USEMODULE)))
+  USEMODULE += od
+endif
+
 ifneq (,$(filter trace,$(USEMODULE)))
   USEMODULE += ztimer
   USEMODULE += ztimer_usec
