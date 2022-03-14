@@ -1,0 +1,4 @@
+USEMODULE += checksum
+USEMODULE += xtimer
+FEATURES_REQUIRED += periph_gpio
+FEATURES_REQUIRED += periph_uart
