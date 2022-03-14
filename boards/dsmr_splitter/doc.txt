@@ -1,0 +1,8 @@
+/**
+ * @defgroup    boards_dsmr_splitter DSMR Splitter board
+ * @ingroup     boards
+ * @brief       Support for DSMR splitter board
+
+## Overview
+See https://github.com/basilfx/DSMR-Splitter
+ */
